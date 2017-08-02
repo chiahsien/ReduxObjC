@@ -12,6 +12,9 @@
 		52178D0D1F322474003CC407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52178D0B1F322474003CC407 /* Main.storyboard */; };
 		52178D0F1F322474003CC407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52178D0E1F322474003CC407 /* Assets.xcassets */; };
 		52178D121F322474003CC407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52178D101F322474003CC407 /* LaunchScreen.storyboard */; };
+		52C58AAE1F322C1B00A9D6C4 /* RDXAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AAD1F322C1B00A9D6C4 /* RDXAction.m */; };
+		52C58AB71F3237F900A9D6C4 /* RDXStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AB61F3237F900A9D6C4 /* RDXStore.m */; };
+		52C58ABA1F323AD300A9D6C4 /* RDXConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AB91F323AD300A9D6C4 /* RDXConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,14 @@
 		52178D0E1F322474003CC407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52178D111F322474003CC407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52178D131F322474003CC407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C58AAC1F322C1B00A9D6C4 /* RDXAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXAction.h; sourceTree = "<group>"; };
+		52C58AAD1F322C1B00A9D6C4 /* RDXAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDXAction.m; sourceTree = "<group>"; };
+		52C58AB21F32365100A9D6C4 /* RDXReducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXReducer.h; sourceTree = "<group>"; };
+		52C58AB51F3237F900A9D6C4 /* RDXStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXStore.h; sourceTree = "<group>"; };
+		52C58AB61F3237F900A9D6C4 /* RDXStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDXStore.m; sourceTree = "<group>"; };
+		52C58AB81F323AD300A9D6C4 /* RDXConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXConstant.h; sourceTree = "<group>"; };
+		52C58AB91F323AD300A9D6C4 /* RDXConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDXConstant.m; sourceTree = "<group>"; };
+		52C58AC71F33767600A9D6C4 /* RDXState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +66,8 @@
 		52178D011F322474003CC407 /* ReduxObjC */ = {
 			isa = PBXGroup;
 			children = (
-				52178D191F322603003CC407 /* Codes */,
-				52178D021F322474003CC407 /* Supporting Files */,
+				52178D191F322603003CC407 /* Demo */,
+				52C58AAB1F3229EE00A9D6C4 /* Redux */,
 			);
 			path = ReduxObjC;
 			sourceTree = "<group>";
@@ -67,21 +78,35 @@
 				52178D0E1F322474003CC407 /* Assets.xcassets */,
 				52178D131F322474003CC407 /* Info.plist */,
 				52178D101F322474003CC407 /* LaunchScreen.storyboard */,
-				52178D0B1F322474003CC407 /* Main.storyboard */,
 				52178D031F322474003CC407 /* main.m */,
+				52178D0B1F322474003CC407 /* Main.storyboard */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		52178D191F322603003CC407 /* Codes */ = {
+		52178D191F322603003CC407 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				52178D021F322474003CC407 /* Supporting Files */,
 				52178D051F322474003CC407 /* AppDelegate.h */,
 				52178D061F322474003CC407 /* AppDelegate.m */,
 			);
-			name = Codes;
-			path = Codes;
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		52C58AAB1F3229EE00A9D6C4 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				52C58AAC1F322C1B00A9D6C4 /* RDXAction.h */,
+				52C58AAD1F322C1B00A9D6C4 /* RDXAction.m */,
+				52C58AB81F323AD300A9D6C4 /* RDXConstant.h */,
+				52C58AB91F323AD300A9D6C4 /* RDXConstant.m */,
+				52C58AB21F32365100A9D6C4 /* RDXReducer.h */,
+				52C58AC71F33767600A9D6C4 /* RDXState.h */,
+				52C58AB51F3237F900A9D6C4 /* RDXStore.h */,
+				52C58AB61F3237F900A9D6C4 /* RDXStore.m */,
+			);
+			path = Redux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +182,9 @@
 			files = (
 				52178D071F322474003CC407 /* AppDelegate.m in Sources */,
 				52178D041F322474003CC407 /* main.m in Sources */,
+				52C58AAE1F322C1B00A9D6C4 /* RDXAction.m in Sources */,
+				52C58ABA1F323AD300A9D6C4 /* RDXConstant.m in Sources */,
+				52C58AB71F3237F900A9D6C4 /* RDXStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ReduxObjC/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "ReduxObjC/Demo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nelson.ReduxObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ReduxObjC/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "ReduxObjC/Demo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nelson.ReduxObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
