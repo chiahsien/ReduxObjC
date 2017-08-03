@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Pf-Zc-SE4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="n6R-zk-tjj">
+            <objects>
+                <viewController id="6Pf-Zc-SE4" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qz5-lE-wmQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qBi-8v-RtX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M73-aV-Z04">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsY-5l-Rok">
+                                <rect key="frame" x="36" y="303.5" width="303" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Uhj-dy-zmX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWG-yD-fqJ">
+                                <rect key="frame" x="36" y="223.5" width="131.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f6k-MP-xY2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="decreaseCount:" destination="6Pf-Zc-SE4" eventType="touchUpInside" id="o5R-O7-ZnH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZk-9V-Rv4">
+                                <rect key="frame" x="207.5" y="223.5" width="131.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kJm-Cr-ctq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="increaseCount:" destination="6Pf-Zc-SE4" eventType="touchUpInside" id="LbZ-XA-Hlp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nsY-5l-Rok" firstAttribute="top" secondItem="XZk-9V-Rv4" secondAttribute="bottom" constant="30" id="6ep-aq-GIt"/>
+                            <constraint firstItem="nsY-5l-Rok" firstAttribute="leading" secondItem="M73-aV-Z04" secondAttribute="leadingMargin" constant="20" id="EMd-iv-ydj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XZk-9V-Rv4" secondAttribute="trailing" constant="20" id="Mh8-pi-A34"/>
+                            <constraint firstItem="XZk-9V-Rv4" firstAttribute="width" secondItem="MWG-yD-fqJ" secondAttribute="width" id="bjI-Db-qsP"/>
+                            <constraint firstItem="MWG-yD-fqJ" firstAttribute="leading" secondItem="M73-aV-Z04" secondAttribute="leadingMargin" constant="20" id="p4B-e6-lOp"/>
+                            <constraint firstItem="nsY-5l-Rok" firstAttribute="top" secondItem="MWG-yD-fqJ" secondAttribute="bottom" constant="30" id="pZT-F1-ZAg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nsY-5l-Rok" secondAttribute="trailing" constant="20" id="tR4-1O-nKn"/>
+                            <constraint firstItem="XZk-9V-Rv4" firstAttribute="leading" secondItem="MWG-yD-fqJ" secondAttribute="trailing" constant="40" id="vHe-lU-zBl"/>
+                            <constraint firstItem="nsY-5l-Rok" firstAttribute="centerY" secondItem="M73-aV-Z04" secondAttribute="centerY" id="vnr-B1-2LK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="nsY-5l-Rok" id="XPo-Lh-5cX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7T-5L-Gi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="14"/>
+        </scene>
+    </scenes>
 </document>

@@ -15,6 +15,10 @@
 		52C58AAE1F322C1B00A9D6C4 /* RDXAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AAD1F322C1B00A9D6C4 /* RDXAction.m */; };
 		52C58AB71F3237F900A9D6C4 /* RDXStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AB61F3237F900A9D6C4 /* RDXStore.m */; };
 		52C58ABA1F323AD300A9D6C4 /* RDXConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AB91F323AD300A9D6C4 /* RDXConstant.m */; };
+		52C58ABD1F3360B700A9D6C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58ABC1F3360B700A9D6C4 /* ViewController.m */; };
+		52C58AC01F33624100A9D6C4 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58ABF1F33624100A9D6C4 /* State.m */; };
+		52C58AC31F33627B00A9D6C4 /* Reducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AC21F33627B00A9D6C4 /* Reducer.m */; };
+		52C58AC61F33630800A9D6C4 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AC51F33630800A9D6C4 /* Action.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,14 @@
 		52C58AB61F3237F900A9D6C4 /* RDXStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDXStore.m; sourceTree = "<group>"; };
 		52C58AB81F323AD300A9D6C4 /* RDXConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXConstant.h; sourceTree = "<group>"; };
 		52C58AB91F323AD300A9D6C4 /* RDXConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDXConstant.m; sourceTree = "<group>"; };
+		52C58ABB1F3360B700A9D6C4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52C58ABC1F3360B700A9D6C4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52C58ABE1F33624100A9D6C4 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		52C58ABF1F33624100A9D6C4 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		52C58AC11F33627B00A9D6C4 /* Reducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reducer.h; sourceTree = "<group>"; };
+		52C58AC21F33627B00A9D6C4 /* Reducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reducer.m; sourceTree = "<group>"; };
+		52C58AC41F33630800A9D6C4 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		52C58AC51F33630800A9D6C4 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
 		52C58AC71F33767600A9D6C4 /* RDXState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +100,16 @@
 			isa = PBXGroup;
 			children = (
 				52178D021F322474003CC407 /* Supporting Files */,
+				52C58AC41F33630800A9D6C4 /* Action.h */,
+				52C58AC51F33630800A9D6C4 /* Action.m */,
 				52178D051F322474003CC407 /* AppDelegate.h */,
 				52178D061F322474003CC407 /* AppDelegate.m */,
+				52C58AC11F33627B00A9D6C4 /* Reducer.h */,
+				52C58AC21F33627B00A9D6C4 /* Reducer.m */,
+				52C58ABE1F33624100A9D6C4 /* State.h */,
+				52C58ABF1F33624100A9D6C4 /* State.m */,
+				52C58ABB1F3360B700A9D6C4 /* ViewController.h */,
+				52C58ABC1F3360B700A9D6C4 /* ViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -180,11 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C58AC61F33630800A9D6C4 /* Action.m in Sources */,
 				52178D071F322474003CC407 /* AppDelegate.m in Sources */,
 				52178D041F322474003CC407 /* main.m in Sources */,
 				52C58AAE1F322C1B00A9D6C4 /* RDXAction.m in Sources */,
 				52C58ABA1F323AD300A9D6C4 /* RDXConstant.m in Sources */,
 				52C58AB71F3237F900A9D6C4 /* RDXStore.m in Sources */,
+				52C58AC31F33627B00A9D6C4 /* Reducer.m in Sources */,
+				52C58AC01F33624100A9D6C4 /* State.m in Sources */,
+				52C58ABD1F3360B700A9D6C4 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
