@@ -7,9 +7,13 @@
 //
 
 #import "RDXReducer.h"
-#import "RDXConstant.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * Posts when state is changed, the sender is the store object and the `userInfo` dictionary is `nil`.
+ */
+FOUNDATION_EXPORT NSNotificationName const RDXStateDidChangeNotification;
 
 /**
  * The RDXStore object retains all reducers and the state (the single source of truth).

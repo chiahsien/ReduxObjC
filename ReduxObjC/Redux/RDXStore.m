@@ -8,6 +8,8 @@
 
 #import "RDXStore.h"
 
+NSNotificationName const RDXStateDidChangeNotification = @"RDXStateDidChangeNotification";
+
 @interface RDXStore ()
 @property (nonatomic, strong) id <RDXState> state;
 @property (nonatomic, copy) NSArray <RDXReduceBlock> *reducers;
