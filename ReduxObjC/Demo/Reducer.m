@@ -13,8 +13,8 @@
 @implementation Reducer
 
 + (RDXReduceBlock)increaseReducer {
-    RDXReduceBlock reducer = ^(State *state, RDXAction *action) {
-        if ([action.type isEqualToString:ActionTypeIncreaseCount]) {
+    RDXReduceBlock reducer = ^(State *state, Action *action) {
+        if ([action.identifier isEqualToString:ActionIdentifierIncreaseCount]) {
             state.count++;
         }
     };
@@ -22,8 +22,8 @@
 }
 
 + (RDXReduceBlock)decreaseReducer {
-    RDXReduceBlock reducer = ^(State *state, RDXAction *action) {
-        if ([action.type isEqualToString:ActionTypeDecreaseCount]) {
+    RDXReduceBlock reducer = ^(State *state, Action *action) {
+        if ([action.identifier isEqualToString:ActionIdentifierDecreaseCount]) {
             state.count--;
         }
     };

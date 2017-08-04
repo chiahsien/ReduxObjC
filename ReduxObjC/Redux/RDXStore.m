@@ -30,7 +30,7 @@
     return self;
 }
 
-- (void)dispatchAction:(__kindof RDXAction *)action {
+- (void)dispatchAction:(id <RDXAction> )action {
     dispatch_async(self.operationQueue, ^{
         for (RDXReduceBlock block in self.reducers) {
             block(self.state, action);

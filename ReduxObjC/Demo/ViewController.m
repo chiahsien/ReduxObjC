@@ -36,12 +36,12 @@
 }
 
 - (IBAction)decreaseCount:(id)sender {
-    RDXAction *action = [[RDXAction alloc] initWithActionType:ActionTypeDecreaseCount payload:nil];
+    Action *action = [[Action alloc] initWithActionIdentifier:ActionIdentifierDecreaseCount payload:nil];
     [self.store dispatchAction:action];
 }
 
 - (IBAction)increaseCount:(id)sender {
-    RDXAction *action = [[RDXAction alloc] initWithActionType:ActionTypeIncreaseCount payload:nil];
+    Action *action = [[Action alloc] initWithActionIdentifier:ActionIdentifierIncreaseCount payload:nil];
     [self.store dispatchAction:action];
 }
 

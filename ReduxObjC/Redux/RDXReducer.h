@@ -20,7 +20,7 @@
  * @param state Current state.
  * @param action An action object.
  */
-typedef void (^RDXReduceBlock)(id <RDXState> state, __kindof RDXAction *action);
+typedef void (^RDXReduceBlock)(id <RDXState> state, id <RDXAction> action);
 
 @protocol RDXReducer
 

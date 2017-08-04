@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param action The action object to be dispatched.
  */
-- (void)dispatchAction:(__kindof RDXAction *)action;
+- (void)dispatchAction:(id <RDXAction> )action;
 
 /**
  * Asks the receiver for current state.
