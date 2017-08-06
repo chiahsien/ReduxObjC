@@ -7,15 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "RDXStore.h"
 
-#import "State.h"
-#import "Reducer.h"
+#import "Store.h"
 #import "Action.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
-@property (nonatomic, strong) RDXStore *store;
 @end
 
 @implementation ViewController
@@ -27,9 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    State *state = [[State alloc] init];
-    NSArray *reducers = [Reducer reducers];
-    self.store = [[RDXStore alloc] initWithReducers:reducers state:state];
     [self updateCount:nil];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateCount:) name:RDXStateDidChangeNotification object:nil];
@@ -37,16 +31,16 @@
 
 - (IBAction)decreaseCount:(id)sender {
     Action *action = [[Action alloc] initWithActionIdentifier:ActionIdentifierDecreaseCount payload:nil];
-    [self.store dispatchAction:action];
+    [[Store sharedStore] dispatchAction:action];
 }
 
 - (IBAction)increaseCount:(id)sender {
     Action *action = [[Action alloc] initWithActionIdentifier:ActionIdentifierIncreaseCount payload:nil];
-    [self.store dispatchAction:action];
+    [[Store sharedStore] dispatchAction:action];
 }
 
 - (void)updateCount:(NSNotification *)note {
-    State *state = (State *)[self.store currentState];
+    State *state = (State *)[[Store sharedStore] currentState];
     self.label.text = [NSString stringWithFormat:@"%ld", state.count];
 }
 

@@ -12,6 +12,7 @@
 		52178D0D1F322474003CC407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52178D0B1F322474003CC407 /* Main.storyboard */; };
 		52178D0F1F322474003CC407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52178D0E1F322474003CC407 /* Assets.xcassets */; };
 		52178D121F322474003CC407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52178D101F322474003CC407 /* LaunchScreen.storyboard */; };
+		52A925F61F376951000DEF1E /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A925F51F376951000DEF1E /* Store.m */; };
 		52C58AB71F3237F900A9D6C4 /* RDXStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58AB61F3237F900A9D6C4 /* RDXStore.m */; };
 		52C58ABD1F3360B700A9D6C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58ABC1F3360B700A9D6C4 /* ViewController.m */; };
 		52C58AC01F33624100A9D6C4 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C58ABF1F33624100A9D6C4 /* State.m */; };
@@ -28,6 +29,8 @@
 		52178D0E1F322474003CC407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52178D111F322474003CC407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52178D131F322474003CC407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A925F41F376951000DEF1E /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		52A925F51F376951000DEF1E /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		52C58AAC1F322C1B00A9D6C4 /* RDXAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXAction.h; sourceTree = "<group>"; };
 		52C58AB21F32365100A9D6C4 /* RDXReducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXReducer.h; sourceTree = "<group>"; };
 		52C58AB51F3237F900A9D6C4 /* RDXStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXStore.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				52C58AC21F33627B00A9D6C4 /* Reducer.m */,
 				52C58ABE1F33624100A9D6C4 /* State.h */,
 				52C58ABF1F33624100A9D6C4 /* State.m */,
+				52A925F41F376951000DEF1E /* Store.h */,
+				52A925F51F376951000DEF1E /* Store.m */,
 				52C58ABB1F3360B700A9D6C4 /* ViewController.h */,
 				52C58ABC1F3360B700A9D6C4 /* ViewController.m */,
 			);
@@ -198,6 +203,7 @@
 				52C58AB71F3237F900A9D6C4 /* RDXStore.m in Sources */,
 				52C58AC31F33627B00A9D6C4 /* Reducer.m in Sources */,
 				52C58AC01F33624100A9D6C4 /* State.m in Sources */,
+				52A925F61F376951000DEF1E /* Store.m in Sources */,
 				52C58ABD1F3360B700A9D6C4 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
