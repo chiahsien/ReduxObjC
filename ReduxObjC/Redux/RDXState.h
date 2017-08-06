@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * In order to deep copy the state via
+ * `[NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:state]]`,
+ * the `RDXState` protocol needs to conform to `<NSCoding> protocol.
+ */
 @protocol RDXState <NSCoding>
-
 @end

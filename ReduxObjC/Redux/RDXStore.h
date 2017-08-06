@@ -18,7 +18,7 @@ FOUNDATION_EXPORT NSNotificationName const RDXStateDidChangeNotification;
 /**
  * The RDXStore object retains all reducers and the state (the single source of truth).
  * You dispatch an `RDXAction` object to it, and it passes current state and the action object to all reduce blocks.
- * After all reduce blocks are invoked, notification named `RDXStateDidChangeNotification` is sent, the sender is the store object and the userInfo is `nil`.
+ * After all reduce blocks are invoked, a notification named `RDXStateDidChangeNotification` is sent, the sender is the store object and the userInfo is `nil`.
  */
 @interface RDXStore : NSObject
 - (instancetype)init NS_UNAVAILABLE;
